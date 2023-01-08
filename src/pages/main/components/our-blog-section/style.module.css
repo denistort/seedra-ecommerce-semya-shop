@@ -1,0 +1,41 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.section {
+  padding-bottom: 5rem;
+}
+.long {
+  grid-column: 1 / 3;
+  background-color: aqua;
+}
+.item {
+  min-height: 30rem;
+  padding: 3rem;
+  background-color: black;
+  border-radius: 1.2rem;
+}
+.height {
+  grid-row: 1 / 3;
+  grid-column: 3 / 3;
+  background-color: brown;
+}
+
+.grid * {
+  background: linear-gradient(
+    120deg,
+    #e5e5e5 30%,
+    #f2f2f2 38%,
+    #f2f2f2 40%,
+    #e5e5e5 48%
+  );
+  background-size: 300%;
+  background-position: 100% 0;
+  animation: anim 1.5s infinite;
+}
+@keyframes anim {
+  to {
+    background-position: -100% 0;
+  }
+}

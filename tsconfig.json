@@ -21,7 +21,14 @@
       "@global-constants/*": ["global-constants/*"],
       "@interfaces/*": ["interfaces/*"],
       "@helpers/*": ["helpers/*"],
-      "@shared-components/*": ["shared-components/*"],
+      // VIEWS
+      "@app/*": ["view/app/*"],
+      "@router": ["view/router/"],
+      "@app": ["view/app/"],
+      "@styled-components": ["view/styled-components/"],
+      "@styled-components/*": ["view/styled-components/*"],
+      "@pages/*": ["view/pages/*"],
+      "@shared-components/*": ["view/shared-components/*"]
     }
   }
 }

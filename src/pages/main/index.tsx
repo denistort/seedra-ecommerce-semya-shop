@@ -1,8 +1,7 @@
 import { Component } from 'solid-js';
 import { styled } from 'solid-styled-components';
 
-import { Container } from '@shared-components/ui';
-import { Typography } from '@shared-components/ui/Typography';
+import { Container, Typography } from '@shared-components/ui';
 
 import { WellSeed } from './components/block-well-seed';
 import { IntroSection } from './components/intro-section';

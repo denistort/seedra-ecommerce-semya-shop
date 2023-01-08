@@ -10,6 +10,18 @@
     "jsxImportSource": "solid-js",
     "types": ["vite/client", "vite-plugin-solid-svg/types"],
     "noEmit": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@assets/*": ["assets/*"],
+      "@router/*": ["router/*"],
+      "@store/*": ["store/*"],
+      "@store/": ["store/"],
+      "@hooks/*": ["hooks/*"],
+      "@global-constants/*": ["global-constants/*"],
+      "@interfaces/*": ["interfaces/*"],
+      "@helpers/*": ["helpers/*"],
+      "@shared-components/*": ["shared-components/*"],
+    }
   }
 }

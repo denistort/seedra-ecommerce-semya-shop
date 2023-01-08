@@ -1,11 +1,10 @@
-import { A } from '@solidjs/router';
 import { Component } from 'solid-js';
 import { styled } from 'solid-styled-components';
-import { Container } from '../ui';
-import SeedraLogo from '../../assets/svg/SeedraLogo.svg';
+import { A } from '@solidjs/router';
+
+import { Container, Divider } from '../../ui';
 
 import c from './style.module.css';
-import { Divider } from '../ui/Divider';
 
 const FooterNav = styled('ul')`
   padding: 0;

@@ -3,11 +3,11 @@ import AppRouter from './AppRouter';
 
 // LAZYLOADING COMPONENTS
 const MainPage = lazy(() => import('../pages/main'));
-const ComponentsPage = lazy(() => import('../pages/components'));
-const Page404 = lazy(() => import('../pages/404'));
-const AboutPage = lazy(() => import('../pages/about'));
-const BlogPage = lazy(() => import('../pages/blog'));
-const ContactsPage = lazy(() => import('../pages/contacts'));
+const ComponentsPage = lazy(() => import('../pages/ComponentsPage'));
+const Page404 = lazy(() => import('../pages/404-page'));
+const AboutPage = lazy(() => import('../pages/AboutPage'));
+const BlogPage = lazy(() => import('../pages/BlogPage'));
+const ContactsPage = lazy(() => import('../pages/ContactsPage'));
 
 export const appRouter = new AppRouter();
 

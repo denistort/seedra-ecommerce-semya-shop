@@ -1,9 +1,11 @@
-import { Component, ComponentProps, createSignal, splitProps } from 'solid-js';
+import { Component, createSignal, splitProps } from 'solid-js';
 import { styled } from 'solid-styled-components';
-import SearchIcon from '../../../assets/svg/SearchIcon.svg';
-import c from './style.module.css';
 
-export type SearchInput = ComponentProps<'input'>;
+import SearchIcon from '@assets/svg/SearchIcon.svg';
+
+import c from './style.module.css';
+import { SearchInputProps } from './types';
+
 
 const Button = styled('button')`
   background-color: transparent;
@@ -41,7 +43,7 @@ const Input = styled('input')`
   outline: none;
 `;
 
-export const SearchInput: Component<SearchInput> = (props) => {
+export const SearchInput: Component<SearchInputProps> = (props) => {
   const [_, rest] = splitProps(props, []);
   const [isFocused, setIsFocused] = createSignal(false);
 

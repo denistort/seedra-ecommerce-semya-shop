@@ -1,8 +1,8 @@
 import { Component } from 'solid-js';
 import { styled } from 'solid-styled-components';
-import { Button, Container } from '../../shared-components/ui';
-import { DeliveryTypeMenu } from '../../shared-components/ui/DeliveryType';
-import { Typography } from '../../shared-components/ui/Typography';
+import { Button, Container } from '@shared-components/ui';
+import { DeliveryTypeMenu } from '@shared-components/ui/DeliveryType';
+import { Typography } from '@shared-components/ui/Typography';
 
 const Wrapper = styled('div')`
   padding-top: 1.7rem;

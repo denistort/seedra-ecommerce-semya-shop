@@ -1,5 +1,4 @@
 import type { Component, JSX } from 'solid-js';
-import 'solid-js';
 
 declare module 'solid-js' {
   export type ComponentWithChildren<P = {}> = Component<

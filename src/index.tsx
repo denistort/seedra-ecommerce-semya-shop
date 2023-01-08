@@ -1,11 +1,12 @@
 /* @refresh reload */
+import { Router } from '@solidjs/router';
 import { render } from 'solid-js/web';
 
-import App from './App';
 import { StyledThemeProvider } from './styled-components';
 import { GlobalStyles } from './styled-components/GlobalStyles';
-import './index.css';
-import { Router } from '@solidjs/router';
+import App from './App';
+
+import './global-styles/index.css';
 
 render(
   () => (

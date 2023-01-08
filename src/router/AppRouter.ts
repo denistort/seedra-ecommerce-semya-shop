@@ -1,6 +1,6 @@
 import { Component } from "solid-js";
+import { RouteAsArrayType } from "./AppRouter.types";
 
-export type RouteAsArrayType = { path: string, page: Component };
 export default class AppRouter {
   private routes: Record<string, Component> = {};
 

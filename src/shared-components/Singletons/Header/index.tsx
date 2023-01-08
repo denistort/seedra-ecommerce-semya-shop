@@ -3,13 +3,13 @@ import { styled } from 'solid-styled-components';
 import { A } from '@solidjs/router';
 
 //LOGOS SVG
-import SeedraLogo from '../../assets/svg/SeedraLogo.svg';
-import InstaLogo from '../../assets/svg/ant-design_instagram-filled.svg';
-import FacebookLogo from '../../assets/svg/akar-icons_facebook-fill.svg';
-import CartLogo from '../../assets/svg/icon_cart_simpleicon.svg';
-import FavorLogo from '../../assets/svg/Outlineicon.svg';
+import SeedraLogo from '@assets/svg/SeedraLogo.svg';
+import InstaLogo from '@assets/svg/ant-design_instagram-filled.svg';
+import FacebookLogo from '@assets/svg/akar-icons_facebook-fill.svg';
+import CartLogo from '@assets/svg/icon_cart_simpleicon.svg';
+import FavorLogo from '@assets/svg/Outlineicon.svg';
 
-import { Container, SearchInput } from '../ui';
+import { Container, SearchInput } from '../../ui';
 
 import c from './style.module.css';
 

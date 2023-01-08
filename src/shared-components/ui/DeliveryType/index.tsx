@@ -1,14 +1,10 @@
 import { Component, createEffect, createSignal, For, on } from 'solid-js';
 import { styled } from 'solid-styled-components';
-import { WithFilterKeyOnKeyboeardEvent } from '../../../helpers/witFilterKeyOnKeyboardEvent';
+
+import { WithFilterKeyOnKeyboeardEvent } from '@helpers/witFilterKeyOnKeyboardEvent';
+import { DeliveryTypeMenuProps } from './types';
 import c from './style.module.css';
 
-type VarianType = { name: string; price: number };
-
-export type DeliveryTypeMenu = {
-  onChange?: <T>(value: T) => void;
-  variants: Array<VarianType>;
-};
 
 const MenuWrapper = styled('div')`
   position: relative;
@@ -84,7 +80,7 @@ const DropDownMenuItem = styled('div')`
   }
 `;
 
-export const DeliveryTypeMenu: Component<DeliveryTypeMenu> = (props) => {
+export const DeliveryTypeMenu: Component<DeliveryTypeMenuProps> = (props) => {
   const [isOpen, setIsOpen] = createSignal(false);
   const [isHoverOrClicked, setIsHoverOrClicked] = createSignal(false);
   const [currentItem, setCurrentItem] = createSignal('Delivery Example');
